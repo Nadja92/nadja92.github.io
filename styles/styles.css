@@ -1,0 +1,230 @@
+/* turn on box sixing for easier spacing calculation */
+
+* {
+	box-sizing: border-box;
+}
+
+/* add reset styles to align cross browser behaviour */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* set global styles */
+
+body {
+	background-color: #e7e7e7;
+}
+
+/* set global helper classes to stop code repetition */
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+
+.margin-top-60 {
+	margin-top: 60px;
+}
+
+.margin-bottom-60 {
+	margin-bottom: 60px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* sidebar styles */
+
+.sidebar {
+	width: 400px;
+	background: #302D32;
+	padding: 20px;
+	float: left;
+	height: 100vh;
+	position: relative;
+}
+
+.sidebar-headline {
+	color: white;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 35px;
+}
+
+.sidebar-subheadline {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.sidebar-list li {
+	color: white;
+	line-height: 20px;
+	cursor: pointer;
+	list-style-type: square; 
+	list-style-position: inside;
+}
+
+.sidebar-list li.active {
+	font-weight: bold;
+	color: orange;
+}
+
+.sidebar-info {
+	color: white;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.sidebar-copyright {
+	position: absolute;
+	bottom: 20px;
+	color: white;
+}
+
+/* content frame styles */
+
+iframe {
+	width: calc(100% - 400px);
+	height: 100vh;
+	float: left;
+}
+
+.content-wrapper {
+	background: white;
+	padding: 50px calc((100% - 750px) /2);
+	text-align: center;
+}
+
+.content-wrapper iframe {
+	width: 150%;
+	position: relative;
+	left: -25%;
+	height: 650px;
+	margin-bottom: 60px;
+	float: initial;
+	border: 1px solid #abbac5;
+}
+
+.content-wrapper img {
+	width: 100%;
+}
+
+.content-headline {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+.content-subheadline {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.content-wrapper .regular {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.content-wrapper .formula {
+	font-size: 30px;
+	line-height: 38px;
+	font-style: italic;
+	color: #abbac5;
+}
+
+.content-task-list li {
+	background: #fffbfb;
+	box-shadow: 0 0 4px 0px #abbac5;
+	width: 100%;
+	min-height: 270px;
+	padding: 20px;
+}
+
+.content-task-list li * {
+	text-align: left;
+}
+
+.task-headline {
+	width: calc(100% + 40px);
+	padding: 10px 20px;
+	left: -20px;
+	position: relative;
+	top: -20px;
+	background: orange;
+	color: white;
+}
+
+/* latex support classes */
+
+.latex {
+	color: #010101;
+}
