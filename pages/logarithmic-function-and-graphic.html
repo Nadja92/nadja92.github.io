@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<title>Eskponencijalna i logaritamska funkcija</title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		<meta charset="UTF-8">
+
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript"
+		  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	</head>
+
+<body class="content-wrapper">
+
+	<h1 class="content-headline margin-bottom-60">Logaritamska funckija i grafik</h1>
+
+	<p class="regular margin-bottom-20">Funkcijom $f: \mathbb{R} \rightarrow \mathbb{R^{+}}, \mathbb{R} \ni x \rightarrow f(x)=a^{x}=y \in \mathbb{R^{+}}$ ostvaruje se bijektivno preslikavanje skupa $\mathbb{R}$ na skup $\mathbb{R^{+}}$, pa postoji inverzna funkcija ove funkcije koja je data sa
+$ f^{-1}: \mathbb{R^{+}} \rightarrow \mathbb{R}, \mathbb{R^{+}} \ni y \rightarrow f^{-1}(y)= \log_{a}⁡y=x \in \mathbb{R}$.  Funkcija $y=   \log_{a}⁡x, a>0, a \neq 1, x>0$ naziva se logaritamska funkcija.  Zbog inverznosti važi $\log_{a}⁡a^{x}=x$, za svako $x$.</p>
+	
+	<p class="regular margin-bottom-20">Osobine: Iz relacija za eksponencijalnu funkciju se izvode osobine za logaritamsku.</p>
+
+	<p class="regular"><b>1.</b> Definisana samo za $x>0$ i svakoj vrednosti $x$ odgovara samo jedna vrednost.</p>
+	<p class="regular"><b>2.</b> Za $ 0< a <1$ funkcija je monotono opadajuća, a za $a>1$ monotono rastuća.</p>
+	<p class="regular margin-bottom-60"><b>3.</b> $\log_{a}⁡1=0$ i $\log_{a}⁡a=1$. To znamo iz jednačina $x=a^{y}$ tj. $1=a^{0}$ i $a=a^{1}$.</p>
+
+	<iframe calass="margin-top-60 margin-bottom-60" src="https://ggbm.at/MJThxapv"></iframe> 
+
+	<p class="regular margin-bottom-20">Logaritme sa bazom $a=10$ zovemo dekadni logaritam i pišemo $\log ⁡x$. Ako je baza $a=e$ takav logaritam zovemo prirodni i pišemo $\ln(x)$. Njemu inverzna funkcija je $y=e^{x}$.</p>
+	
+	<h2 class="content-subheadline margin-bottom-40">Pravila: Neka je $a,b>0, a,b \neq 1, x>0.$ Tada je:</h2>
+	<p class="regular margin-bottom-20">1. $\log_{a}xy=\log_{a}x + \log_{a}⁡y $</p>
+	<p class="regular margin-bottom-20">2. $\log_{a}⁡ \dfrac{x}{y}=\log_{a} ⁡x - \log_{a} ⁡y$</p>
+	<p class="regular margin-bottom-20">3. $\log_{a} x^{y}=y \log_{a} ⁡x$ </p>
+	<p class="regular margin-bottom-20">4. $\log_{a} ⁡a^{x}=x$</p>
+	<p class="regular margin-bottom-20">5. $a^{\log_{a} ⁡x} =x$</p>
+	<p class="regular margin-bottom-20">6. $\log_{a} ⁡x=\frac{\log_{b} x}{\log_{b}} a$</p> 
+	<p class="regular margin-bottom-20">7. $\log_{a} ⁡b=\frac{1}{\log_{a} b} $</p>
+	<p class="regular margin-bottom-60">8. $\log_{a^{r}} x=\dfrac{1}{r}log_{a} ⁡x $</p>
+
+	<img class="margin-bottom-20" src="../images/img4.png" alt="geogebra-export4">
+	<img class="margin-bottom-60" src="../images/img5.png" alt="geogebra-export5">
+
+</body>
+</html>	
