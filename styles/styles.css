@@ -165,9 +165,8 @@ iframe {
 }
 
 .content-wrapper iframe {
-	width: 150%;
+	width: 100%;
 	position: relative;
-	left: -25%;
 	height: 650px;
 	margin-bottom: 60px;
 	float: initial;
